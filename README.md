@@ -35,6 +35,8 @@ The Eagle Board is also included.
 
 You can observe how the circuit needs to be configured in order to operate.
 
+![Eagle Circuit](https://raw.githubusercontent.com/dllmkdir/Moog-DFAM-MIDI-sync/master/diagram.png)
+
 Connect the Arduino to the Native USB Port and configure the MIDI output in your Favorite DAW.
 
 The device must appear as `Arduino Due`.
