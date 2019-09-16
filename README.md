@@ -11,9 +11,7 @@ Most of the non-USB-native microcontrollers need to use the Serial Port with [Ha
 
 Hairless is a program to communicate MIDI information, but it is not a robust solution to implement.
 
-Hairless crashes, has multiple errors and can even freeze computers. In action, Hairless is more like a testing toy than a good way to mantain 
-
-MIDI communication. Also, it creates huge lag gaps.
+Hairless crashes, has multiple errors and can even freeze computers. In action, Hairless is more like a testing toy than a good way to mantain MIDI communication. Also, it creates huge lag gaps.
 
 Current is not a big problem for the DFAM, because the input and output work with buffers to decouple impedance.
 
@@ -23,7 +21,7 @@ Using the libraries provided by the Arduino Team:
 [https://github.com/arduino-libraries/MIDIUSB](https://github.com/arduino-libraries/MIDIUSB)
 
 
-First, download the MIDUSB library available on Arduino. (version 1.0.3 is recommended)
+First, download the MIDIUSB library available on Arduino. (version 1.0.3 is recommended)
 
 We added the main src folder of this library just for reference. These are the most important files on the library.
 
@@ -39,7 +37,7 @@ You can observe how the circuit needs to be configured in order to operate.
 
 Connect the Arduino to the Native USB Port and configure the MIDI output in your Favorite DAW.
 
-The device must appear as `Arduino Due`.
+The device must appear as `Arduino Due`. 
 
 After this, the MIDI trigger signal must be there. Check out if the Built-in LED reacts to the incoming MIDI Impulse.
 
@@ -50,6 +48,8 @@ You must be getting voltages across 0.1 and 5 V.
 Finally, Create a MIDI Track and send any note to trigger the MOOG DFAM.
 
 Observe that the incoming note must be in a short duration to avoid multiple false triggers.
+
+BAM! Now your Moog DFAM can sync to any MIDI sequence.
 
 
 
